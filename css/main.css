@@ -1,0 +1,1209 @@
+
+/* =========================================
+   RESPONSIVE PORTFOLIO LANDING PAGE
+   ========================================= */
+   html,
+body {
+
+    min-height: 100%;
+}
+ 
+body{
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f4f6f7;
+    color: #333;
+
+}
+
+/* =========================================
+PAGE HEADER
+========================================= */
+.header-block {
+     max-width: 1400px;
+     margin: 30px auto .5px;
+      padding: 20px 25px;
+       display: flex; 
+       align-items: center;
+        justify-content: space-between; 
+        background-color: white; 
+        gap: 25px;
+        border-radius: 8px; }
+         /* LOGO */
+          .page-header { 
+            margin:0px;            
+           padding:0px;
+             display: flex; 
+             align-items: center;
+             }
+              .page-header img {
+    width: 350px;
+    height: 100px;
+    display: block;
+    border-radius: 6px;
+}
+/*.page-header {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 10px;
+
+    color: #2c3e50;
+    text-align: left;
+}
+
+/* Global box sizing 
+
+*{
+    box-sizing: border-box;
+}*/
+
+/* =========================================
+   INTRO / MAIN LANDING PAGE
+   ========================================= */
+
+.intro-layout {
+    display: grid;
+
+    grid-template-columns: 400px 1fr;
+
+    gap: .5px;
+
+    max-width: 1400px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    align-items: start;
+}
+
+.picture-column {
+    width: 300px;
+    margin: 0 auto;
+   
+}
+
+
+/* =========================================
+   MAIN PICTURE
+   ========================================= */
+
+
+.main-picture {
+   
+    margin-bottom:20px;
+}
+
+.main-picture img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================
+   RIGHT CONTENT AREA
+   ========================================= */
+
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    height: auto;
+     align-items: stretch;
+}
+/* =========================================
+   STEP 12 - PROJECT CARD POLISH
+   ========================================= */
+
+.content-area .box-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.content-area .box-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 18px;
+    transition: transform 0.3s ease;
+}
+.content-area .box-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    color: #2c3e50;
+       border-bottom: 3px solid darkcyan;
+}
+
+.content-area .box-card p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #444;
+}
+.content-area .box-card img:hover {
+    transform: scale(1.03);
+}
+.content-area .box-card p:first-of-type {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   BOX CARDS
+   ========================================= */
+
+.box-card {
+    background-color: #ffffff;
+
+    padding: 25px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+.box-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.box-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: #2c3e50;
+
+    border-bottom: 2px solid #ddd;
+
+    padding-bottom: 10px;
+}
+
+.box-card p {
+    font-family: Arial, sans-serif;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+/* =========================================
+IMAGES INSIDE BOX CARDS
+========================================= */
+
+.box-card img {
+    width: 100%;
+    height: 160px;
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   ASIDE
+   ========================================= */
+
+.content-area aside {
+    width: 100%;
+
+    grid-column: 1 / -1;
+
+    height: auto;
+    align-self: stretch;
+    margin: 0;
+
+    padding: 15px 25px;
+
+    background-color: #e8f5e9;
+
+    border-left: 5px solid darkcyan;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-area aside h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.4rem;
+}
+
+.content-area aside p {
+    margin: 0 0 10px;
+    line-height: 1.7;
+    
+}
+.content-area aside strong {
+    color: darkcyan;
+}
+/* =========================================
+   STEP 17 - EQUAL CARD HEIGHTS
+   ========================================= */
+
+.content-area .box-card {
+    height: 100%;
+    box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aside-intro {
+   display:block;
+}
+
+.aside-title {
+    grid-column: 1;
+}
+
+.aside-description {
+    grid-column: 2;
+}
+.content-area .box-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+/* =========================================
+   STEP 16 - ASIDE POLISH
+   ========================================= */
+
+.content-area aside .aside-title {
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid darkcyan;
+}
+
+.content-area aside .aside-description {
+    max-width: 900px;
+}
+
+.content-area aside .aside-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+ASIDE SKILLS
+========================================= */
+.skills {
+   
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: #e8f5e9;
+
+    border-left: 5px solid darkcyan;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+    
+  display: block;
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 10px;
+    background-color: darkcyan;
+}
+
+.html-level {
+    width: 85%;
+}
+
+.css-level {
+    width: 75%;
+}
+
+.js-level {
+    width: 65%;
+}
+
+.aside-message {
+    margin-top: 20px;
+       grid-column: 1 / -1;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+/* FOOTER */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================================
+MEDIUM SCREEN
+========================================= */
+
+@media all and (min-width: 781px) and (max-width: 1200px) {
+
+    .intro-layout {
+        grid-template-columns: 300px 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .main-picture {
+        width: 300px;
+    }
+
+    .main-picture img {
+        width: 100%;
+        height: 290px;
+        display: block;
+        margin:0 ;
+    object-fit: cover;
+
+    border: 5px solid white;
+    outline: 2px solid darkcyan;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .content-area {
+        grid-template-columns: 1fr;
+    }
+
+.content-area aside {
+    width: 100%;
+    grid-column: 1 / -1;
+
+    height: auto;
+    align-self: stretch;
+    margin: 0;
+    padding: 15px 25px;
+
+    display: block;
+
+    background-color: #e8f5e9;
+
+    border-left: 5px solid darkcyan;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .box-card {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media all and (min-width: 501px) and (max-width: 780px) {
+
+
+    .intro-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .picture-column {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .main-picture {
+        width: 100%;
+    }
+
+    .main-picture img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .content-area {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: auto;
+    }
+
+    .box-card {
+        padding: 20px;
+    }
+
+    .content-area aside {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+}
+/* =========================================
+   PHONE
+   ========================================= */
+
+@media all and (max-width: 500px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .intro-layout {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 15px auto;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .picture-column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-picture {
+        width: 100%;
+    }
+
+    .main-picture img {
+        width: 100%;
+        max-width: none;
+        height: 220px;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .content-area {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .box-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .box-card img {
+        height: 180px;
+    }
+
+    .content-area aside {
+        width: 100%;
+        grid-column: 1;
+        padding: 15px;
+    }
+    .content-area aside > p {
+    grid-column: 2;
+    margin-top: 0;
+}
+
+    .box-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .box-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .content-area aside h3 {
+        font-size: 1.2rem;
+           grid-column: 1;
+    grid-row: 1;
+    }
+}
+
+
+/* =========================================
+RESPONSIVE SPACING
+========================================= */
+
+@media all and (max-width: 780px) {
+
+    .intro-layout {
+        margin: 20px auto;
+    }
+
+    .box-card {
+        margin-bottom: 5px;
+    }
+
+    .content-area aside {
+        margin-top: 0;
+    }
+
+}
+/* =========================================
+STEP 4E — RESPONSIVE POLISH
+========================================= */
+
+html {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box-card,
+.content-area aside {
+    overflow-wrap: break-word;
+}
+
+@media all and (max-width: 500px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .intro-layout {
+        width: 100%;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .main-picture img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .box-card {
+        padding: 15px;
+    }
+
+    .box-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .box-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .content-area aside {
+        padding: 15px;
+    }
+
+    .content-area aside h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* =========================================
+   PROJECTS PAGE INTRO
+========================================= */
+
+.subheader {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0 10px;
+}
+
+.subtitle {
+    color: #555;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto 30px;
+    max-width: 700px;
+}
+/* start project container rules */
+
+.projects-container {
+  max-width: 900px; /* Keeps things readable on desktop */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* The Main Project Card Wrapper */
+.project-card {
+  display: flex;
+  flex-direction: row; /* Default layout: Image left, text right */
+  align-items: center;
+  gap: 30px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px; /* Smooth rounded corners */
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px); /* Subtle interaction cue */
+}
+
+/* The Magic Mirror: Automatically alternate left/right layout */
+.project-card:nth-child(even) {
+  flex-direction: row-reverse; /* Flips the order for every second card */
+}
+
+/* Image Control Group */
+.project-image {
+  flex-shrink: 0; /* Prevents text from squeezing the image container */
+}
+
+.project-image img {
+  width: 220px;
+  height: 180px;
+  object-fit: cover; /* Forces screenshots to crop nicely instead of squishing */
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Content & CTA Link Elements */
+.project-content {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.project-content h2 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.project-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Flexible, clean Button styles */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.demo-btn {
+  background-color: rgb(189, 127, 5);
+  color: #ffffff;
+}
+
+.demo-btn:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.repo-btn {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.repo-btn:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+/* Responsive Overrides: If screen is small, stack everything vertically */
+@media (max-width: 650px) {
+  .project-card,
+  .project-card:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+}
+/* end project container rules */
+/* =========================================
+   RESUME PAGE
+========================================= */
+
+.resume-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.resume-header {
+    padding: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+}
+
+.resume-header h2 {
+    margin: 0 0 10px;
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.resume-header p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resume-section {
+    margin-bottom: 25px;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border: 1px solid #d5d8dc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.resume-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+     letter-spacing: 0.5px;
+}
+
+.resume-section h4 {
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.resume-section p {
+    line-height: 1.7;
+    color: #444;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    padding: 12px;
+    text-align: center;
+    background-color: #f4f6f7;
+    border: 1px solid #d5d8dc;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #2c3e50;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-project {
+    margin-bottom: 18px;
+    padding: 20px 25px;
+    background-color: #f8f9f9;
+    border-left: 5px solid #2c3e50;
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-project:last-child {
+    margin-bottom: 0;
+}
+
+.resume-project h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+      color: #2c3e50;
+     font-size: 1.5rem;
+}
+
+.resume-project p {
+    margin-top: 0;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.resume-project:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+.resume-section a {
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resume-section a:hover {
+    text-decoration: underline;
+}
+.skills-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+/* =========================================
+   RESUME CONTACT - STEP 5
+========================================= */
+
+.resume-section:last-child {
+    background-color: #f8f9f9;
+}
+
+.resume-section:last-child p {
+    margin: 12px 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #d5d8dc;
+}
+
+.resume-section:last-child p:last-child {
+    border-bottom: none;
+}
+
+.resume-section:last-child strong {
+    display: inline-block;
+    min-width: 90px;
+    color: #2c3e50;
+}
+/* =========================================
+   RESUME HEADER - STEP 6
+========================================= */
+
+.resume-header {
+    border-top: 5px solid #2c3e50;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+.resume-header h2 {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.resume-header p {
+    letter-spacing: 0.3px;
+}
+/* =========================================
+   RESUME RESPONSIVE - STEP 7
+========================================= */
+
+@media (max-width: 700px) {
+
+    .resume-page {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .resume-header {
+        padding: 25px 15px;
+    }
+
+    .resume-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .resume-header p {
+        font-size: 1rem;
+    }
+
+    .resume-section {
+        padding: 20px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-project {
+        padding: 18px;
+    }
+}
+/* =========================================
+   RESUME SPACING - STEP 8
+========================================= */
+
+.resume-section {
+    line-height: 1.6px;
+}
+
+.resume-section h3 {
+    margin-bottom: 20px;
+}
+
+.resume-section h4 {
+    margin-top: 10px;
+}
+
+.resume-section p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.resume-section ul {
+    margin-top: 15px;
+}
+/* =========================================
+   RESUME BACKGROUND - STEP 9
+========================================= */
+
+.resume-page {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.resume-page::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    margin: 0 auto 25px;
+    background-color: #2c3e50;
+    border-radius: 2px;
+}
+/* =========================================
+   RESUME EDUCATION - STEP 10
+========================================= */
+
+.resume-section h4 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.resume-section h4 + p {
+    font-weight: 600;
+    color: #555;
+}
+
+.resume-section h4 + p + p {
+    margin-top: 8px;
+}
+/* =========================================
+   PROFESSIONAL SUMMARY - STEP 11
+========================================= */
+
+.resume-section:first-of-type {
+    border-left: 5px solid #2c3e50;
+}
+
+.resume-section:first-of-type p {
+    font-size: 1.05rem;
+}
+/* =========================================
+   PROFESSIONAL DEVELOPMENT - STEP 12
+========================================= */
+
+.resume-section:nth-of-type(6) {
+    border-left: 5px solid #34495e;
+}
+
+.resume-section:nth-of-type(6) p {
+    font-size: 1.02rem;
+}
+/* =========================================
+   RESUME PRINT - STEP 13
+========================================= */
+
+@media print {
+
+    header {
+        display: none;
+    }
+
+    .resume-page {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .resume-page::before {
+        display: none;
+    }
+
+    .resume-header,
+    .resume-section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .resume-header {
+        border-top: 2px solid #2c3e50;
+    }
+
+    .resume-project:hover,
+    .skills-list li:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .resume-section a {
+        color: #000;
+    }
+}
+/* =========================================
+   RESUME FOOTER SPACING - STEP 14
+========================================= */
+
+.resume-page {
+    min-height: 400px;
+}
+
+.resume-section:last-child {
+    margin-bottom: 10px;
+}
+/* =========================================
+   RESUME MOBILE CONTACT - STEP 15
+========================================= */
+
+@media (max-width: 450px) {
+
+    .resume-section:last-child p {
+        padding: 10px 5px;
+    }
+
+    .resume-section:last-child strong {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .resume-section:last-child a {
+        overflow-wrap: anywhere;
+    }
+}
+/* =========================================
+   RESUME IDENTITY - STEP 16
+========================================= */
+
+.resume-header h2 {
+    text-transform: uppercase;
+}
+
+.resume-header p {
+    font-weight: 500;
+}
+
+/* =========================================
+   RESUME EDUCATION DETAILS - STEP 17
+========================================= */
+
+.resume-section h4 {
+    letter-spacing: 0.3px;
+}
+
+.resume-section h4 + p {
+    margin-bottom: 12px;
+}
+
+.resume-section h4 + p + p {
+    padding-left: 15px;
+    border-left: 3px solid #d5d8dc;
+}
+/* =========================================
+   RESUME SKILL TAGS - STEP 18
+========================================= */
+
+.skills-list li {
+    letter-spacing: 0.3px;
+    transition: transform 0.2s ease, 
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.skills-list li:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-3px);
+}
+/* =========================================
+   RESUME PROJECT TITLES - STEP 19
+========================================= */
+
+.resume-project h4 {
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+
+.resume-project h4::before {
+    content: "▸";
+    margin-right: 8px;
+    color: #2c3e50;
+}
+/* =========================================
+   PROFESSIONAL DEVELOPMENT - STEP 20
+========================================= */
+
+.resume-section:nth-of-type(6) {
+    background-color: #f8f9f9;
+}
+
+.resume-section:nth-of-type(6) h3 {
+    border-bottom-color: #34495e;
+}
+
+.resume-section:nth-of-type(6) p {
+    margin-bottom: 0;
+}
+/* =========================================
+   RESUME CONTACT HEADING - STEP 21
+========================================= */
+
+.resume-section:last-child h3 {
+    font-size: 1.3rem;
+    letter-spacing: 0.6px;
+}
+
+.resume-section:last-child strong {
+    font-weight: 700;
+}

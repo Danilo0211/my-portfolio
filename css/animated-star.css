@@ -1,0 +1,29 @@
+/* Styling for the rocket container */
+.animated-rocket {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 10px;
+    vertical-align: middle;
+    animation: starShimmer 1.8s ease-in-out infinite;
+}
+
+
+/* * Defines the 'Timeline' of the animation:
+       * At 0% time, it's original size and faint.
+       * At 50% (the middle of the loop), it grows and gets brighter.
+       * At 100% time, it returns to the starting values.
+       */
+@keyframes starShimmer {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(5deg); /* Grows and gets a tiny rotation */
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
